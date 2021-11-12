@@ -14,6 +14,7 @@ import { TimeAgoPipe } from './pipes/time-ago.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
 import { PersonasComponent } from './components/personas/personas.component';
 import { PersonaComponent } from './components/persona/persona.component';
+import { VacunaComponent } from './components/vacuna/vacuna.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PersonaComponent } from './components/persona/persona.component';
     TimeAgoPipe,
     HighlightDirective,
     PersonasComponent,
-    PersonaComponent
+    PersonaComponent,
+    VacunaComponent
   ],
   imports: [
     BrowserModule,

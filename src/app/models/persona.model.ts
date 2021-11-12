@@ -1,17 +1,17 @@
 export interface Persona {
-  persona: string;
-  fecha: string;
-  dni: string;
-  tel: string;
-  fieb: string;
-  tos: string;
-  respiracion: string;
-  malestar: string;
-  vacunas: string[]
+  persona?: string;
+  fecha?: string;
+  dni?: string;
+  tel?: string;
+  fieb?: string;
+  tos?: string;
+  respiracion?: string;
+  malestar?: string;
+  vacunas?: string[]
 }
 
-/*export interface CreateProductDTO extends Omit<Product, 'id' | 'category'> {
-  categoryId: number;
+export interface CreatePersonaDTO extends Omit<Persona, 'id' > {
 }
 
-export interface UpdateProductDTO extends Partial<CreateProductDTO> {*/
+export interface UpdatePersonaDTO extends Partial<CreatePersonaDTO> {
+}

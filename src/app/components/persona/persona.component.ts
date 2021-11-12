@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Persona } from '../../models/persona.model'
 
 @Component({
   selector: 'app-persona',
@@ -7,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonaComponent implements OnInit {
 
-  constructor() { }
-
+  @Input() persona: Persona = {  //Ponemos los valores nulls con los que se inicializara
+    persona: '',
+    fecha: '',
+    dni: '',
+    tel: '',
+    fieb: '',
+    tos: '',
+    respiracion: '',
+    malestar: '',
+    vacunas: []
+  }
+  
   ngOnInit(): void {
   }
 

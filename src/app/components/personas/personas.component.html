@@ -1,1 +1,24 @@
-<p>personas works!</p>
+<div *ngFor="let persona of personas">
+    <app-persona [persona]="persona"></app-persona>
+</div>
+<br><br><br>
+<p>Rellenar los campos que se quieran editar:</p>
+<br>
+<p> numero del usuario que se desea editar: </p>
+<input type="text" [(ngModel)]="id" /> <br>
+<p> PERSONA: </p>
+<input type="text" [(ngModel)]="personaedit" /> <br>
+<p>DNI: </p>
+<input type="text" [(ngModel)]="fechaedit" /> <br>
+<p>TEL: </p>
+<input type="text" [(ngModel)]="dniedit" /> <br>
+<p>FIEBRE: </p>
+<input type="text" [(ngModel)]="fiebedit" /> <br>
+<p>TOS: </p>
+<input type="text" [(ngModel)]="tosedit" /> <br>
+<p>RESPIRACION:</p>
+<input type="text" [(ngModel)]="respiracionedit" /> <br>
+<p>MALESTAR:  </p>
+<input type="text" [(ngModel)]="malestaredit" /> <br>
+<button (click)="updatePersona()">editar</button>
+<br><br><br>

@@ -1,1 +1,11 @@
-<p>persona works!</p>
+<br><br><br><br>
+<h5> {{ persona.persona }} </h5>
+<p>DNI: {{ persona.dni }} </p>
+<p>TEL: {{ persona.tel }} </p>
+<p>FIEBRE: {{ persona.fieb }} </p>
+<p>TOS: {{ persona.tos }} </p>
+<p>RESPIRACION: {{ persona.respiracion }} </p>
+<p>MALESTAR: {{ persona.malestar }} </p>
+<p>VACUNAS:</p>
+<p *ngFor="let vacuna of persona.vacunas"> {{ vacuna }}</p>
+
